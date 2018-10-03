@@ -14,7 +14,10 @@ class App extends Component {
   };
 
   handleDelete = event => {
-    console.log("DELETE");
+    var newTodoList = [...this.state.todos]; 
+    var index = newTodoList.indexOf(event.target.value);
+    newTodoList.splice(index, 1);
+    this.setState({todos: newTodoList});
   };
 
   handleChange = event => {
@@ -37,7 +40,7 @@ class App extends Component {
           <div>
             <li key={todo}>
               {todo + " "}
-              <button onClick={this.handleDelete()}>X</button>
+              <button  value={todo} onClick={this.handleDelete}>X</button>
             </li>
           </div>
         ))}
