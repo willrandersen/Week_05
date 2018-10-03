@@ -1,4 +1,4 @@
-import React, { Component } from "react";it
+import React, { Component } from "react";
 class App extends Component {
   state = {
     newTodo: "",
@@ -38,7 +38,7 @@ class App extends Component {
             onChange={this.handleChange}
           />
           <button onClick={this.handleSubmit}> + </button>
-        </form>
+        </form
       </div>
     );
   }
