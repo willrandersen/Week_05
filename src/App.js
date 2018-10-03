@@ -11,7 +11,6 @@ class App extends Component {
       "Add tea"
     ]
   };
-
   render() {
     return (
       <div>
